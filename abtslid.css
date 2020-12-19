@@ -1,14 +1,23 @@
-*{
-    margin:0;
-    padding:0;
-    border-sizing:border-box; 
-}
-body{
+
+#abtbody{
     background-color: #e9f2f5 !important;
 }
 .blocks{
     display: flex;
 }
+
+.abtsec a{
+    text-decoration: none !important;
+    color: white;
+}
+.abtsec a:hover{
+    color:yellow !important;
+}
+
+.scrollhlt{
+    border-left:5px solid rgb(184, 241, 255) !important;
+}
+
 .abtsec{
     margin:0;
     position:fixed;
@@ -25,7 +34,7 @@ body{
     height:2rem;
     margin:0.5vw;
     text-align: left;
-    padding-left:3px;
+    padding-left:4px;
     font-size: 1.6vw;
     font-family: 'Bebas Neue', cursive;
     color: white;
@@ -42,7 +51,7 @@ body{
     margin-left: 1.75rem;
 }
     
-h3{
+#abtbody h3{
     padding-bottom: 10px;
 }
 .titlee:after{
@@ -56,6 +65,12 @@ h3{
 
 }
 
+@media screen and (max-width:460px){
+    .hello{
+        transform:translateX(-1.2rem);
+    }
+}
+
 /*img{
     display: block;
     max-height: 100%;
@@ -67,7 +82,7 @@ h3{
     cursor: pointer;
     margin-left: 13%;
     font-size: 1.7vw;
-    color: rgb(255, 233, 37);
+    color: rgb(255, 233, 37) !important;
 }
 .maincont{
     width:90%;
@@ -96,7 +111,7 @@ h3{
 .abtus::after{
     content: "";
     width:8rem;
-    height:10px;
+    height:7px;
     background-color: rgb(75, 70, 70);
     bottom:0;
     margin:auto;
@@ -117,12 +132,12 @@ h3{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
-.hello{
+#abtbody .hello{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-img{
+#abtbody img{
     display: block;
     margin: auto;
     max-width: 90%;
@@ -211,4 +226,30 @@ img{
     .card {
         margin:1rem 1rem;
     }
+}
+@media screen and (max-width:460px){
+    .card{
+        transform:translateX(-1.05rem);
+    }
+}
+
+.carousel-inner img{
+    height:620px;
+    width:80% !important;
+    margin:auto;
+    object-fit: cover;
+}
+
+.carousel-control-next-icon{
+background-image: url("https://toppng.com/uploads/preview/ext-button-transparent-image-next-button-115629752231qqkzux7gn.png") !important;
+
+}
+.carousel-control-prev-icon{
+background-image: url("https://toppng.com/uploads/preview/ext-button-transparent-image-next-button-115629752231qqkzux7gn.png") !important;
+transform: scaleX(-1);
+margin:auto;
+}
+
+.carousel-inner{
+    margin-top:20px !important;
 }
